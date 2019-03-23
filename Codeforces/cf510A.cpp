@@ -39,7 +39,7 @@ int main(){
 			 cout<<"#";
 			 
 			 	
-			 }#
+			 }
 			 
      		else{
 			 
