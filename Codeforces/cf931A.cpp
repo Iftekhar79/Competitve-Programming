@@ -1,31 +1,51 @@
-//  Friends Meeting
+//Friends Meeting
 
 #include<bits/stdc++.h>
 
 using namespace std;
 
-
 int main(){
-	
 	int a,b;
+	int mid;
+	int dif1,dif2;
+	
 	cin>>a>>b;
-	int sum1=0;
-	int sum2=0;
-	int p=1,q=1;
 	
-	for(int i=a,j=b;;i++){
+	if(a%2==0 && b%2==0){
+		mid=(a+b)/2;
+		}
 		
-		if(i==j)
-		break;
+	if(a%2==1 && b%2==1){
+		mid=(a+b)/2;
+		}
 		
-		sum1=sum1+p;
-		p++;
-		j--;
-		sum2=sum2+q;
-		q++;
+	if(a%2==0 && b%2==1){
+		mid=(a+b)/2;
+		}
+		
+	if(a%2==1 && b%2==0){
+		mid=(a+b)/2;
+		}
+
+	
+	
+	
+	dif1=abs(a-mid);
+	dif2=abs(b-mid);
+	int sum=0;
+	
+	for(int i=1;i<=dif1;i++){
+		
+		sum=sum+i;
+		
+	}	
+	
+	
+	for(int i=1;i<=dif2;i++){
+		
+		sum=sum+i;
+		
 	}
-	
-	int sum=sum1+sum2;
 	
 	cout<<sum<<endl;
 	
