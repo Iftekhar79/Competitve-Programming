@@ -1,1 +1,1 @@
-# Competitve-Programming
+My solutions from different online judges.
