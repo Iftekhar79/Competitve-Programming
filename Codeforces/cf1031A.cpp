@@ -9,8 +9,16 @@ int main(){
 	int w,h,k;
 	cin>>w>>h>>k;
 	
-	int res=k*(w-(4*(k-1))+k-4*(k-1))-4;
+	int sum=0;
 	
-	cout<<res<<endl;
+    for(int i=0;i<k;i++){
+    	
+    	sum=sum+(2*((w-i*4)+(h-i*4))-4);
+    	
+    	
+    	
+	}
+	
+	cout<<sum<<endl;
 	
 }

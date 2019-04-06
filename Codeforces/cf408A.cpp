@@ -18,21 +18,23 @@ int main(){
 		
 	}
 	
+	int ans;
 	
-	int res=10000000;
+	int res=100000;
 	
-	for(int q=0;q<n;q++){
+	for(int i=0;i<n;i++){
 		int sum=0;
-		i=0;
+	
 		for(int j=0;j<arr[i];j++){
 			
 			cin>>num;
 			
 			sum=sum+num*5;
-			
-			res=min(res,sum);			
+				
 		}
-		i++;
+		ans=sum+arr[i]*15;
+			
+			res=min(res,ans);	
 		
 	}
 	

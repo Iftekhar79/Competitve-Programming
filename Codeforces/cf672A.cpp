@@ -1,31 +1,24 @@
 //Summer Camp
 
 #include<bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
-int main(){
+int main() {
 	
-	int arr[1000];
+	string s;
 	
-	
-	for(int i=1;i<=350;i++){
+	for(int i=1;i<=1000;i++){
 		
-		arr[1000]=i;
+		s=s+to_string(i);
+		
 		
 	}
-	
-	
 	int n;
 	cin>>n;
 	
-	
-	for(int j=0;j<1000;j++){
-		
-		cout<<arr[n];
-		
-		
-	}
+	cout<<s[n-1]<<endl;
 	
 	
 }

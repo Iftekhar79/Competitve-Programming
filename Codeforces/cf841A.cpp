@@ -7,29 +7,30 @@ using namespace std;
 int main(){
 	
 	char s[100];
+	int arr[10000];
+	
 	int n,k;
 	
 	cin>>n>>k;
 	cin>>s;
 	
+	int cnt=0;
+	int x;
 	
-	for(int i=0;i<strlen(s);i++){
-		if(s[i]>='a' && s[i]<='z'){
-			s[i]++-'0';
-			
-		}
+	for(int i=0;i<n;i++){
+		x=s[i];
+		
+		arr[x]++;
+	
+	if(arr[x]>k){
+		cout<<"NO"<<endl;
+		return 0;
+		
+     	}
 		
 	}
 	
-		int sum=0;
-	for(int i=49;i<=74;i++){
-	     
-	     if(s[i]-'0'>0){
-	     	sum=sum+(s[i]-'0');
-	     	
-		 }
-	}
-	cout<<sum<<endl;
+	cout<<"YES"<<endl;
 	
 	
 }
