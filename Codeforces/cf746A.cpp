@@ -7,34 +7,13 @@ using namespace std;
 
 int main(){
 	
-	int sum,a,b,c,p;
+	int res,a,b,c,p;
 	cin>>a>>b>>c;
 	
+	// need 1 lemon, 2 apple, 4 pears in compote. so min of them by dividing 1,2,4 each corresponding a,b,c and multiply with 7 is result
+	res=7*min(min(a,b/2),c/4);
 	
-	if(a==b || a==c)
-	cout<<"0"<<endl;
+	cout<<res<<endl;
 	
-	else{
-		if(a*2<=b  && a*4<=c){
-			sum=a+2*a+4*a;
-			cout<<sum<<endl;
-			
-		}
-		else{
-		
-		while(a--){
-			
-			if(a*2>=b && a*4>=c)
-		      p=a;
-		      break;
-			
-		}
-		
-		sum=a+2*a+4*a;
-		
-		cout<<sum<<endl;
-         
-		 }
-	}
 	
 }

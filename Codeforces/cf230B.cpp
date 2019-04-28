@@ -1,33 +1,46 @@
-//T-primes
+// T-primes
 
-#include<iostream>
+#include<bits/stdc++.h>
 
 using namespace std;
 
-
 int main(){
 	
-	
 	int test;
-	int num;
+	long long n;
 	
 	cin>>test;
 	
 	while(test--){
 		
-		cin>>num;
+		cin>>n;
 		int cnt=0;
-		for(int i=1;i<=num;i++){
+		
+		for(int i=1;i<=sqrt(n);i++){
 			
-			if(num%i==0)
-			cnt++;
+			if(n%i==0){
+				
+				if(n/i==i){
+					cnt++;
+					
+				}
+				
+				else
+				cnt=cnt+2;
+				
+				
+			}
 			
 		}
+		
+		
 		if(cnt==3)
-		cout<<"YES"<<endl;
-		else
+		   cout<<"YES"<<endl;
+		   
+		else 
 		cout<<"NO"<<endl;
 		
-		
 	}
+	
+	
 }
