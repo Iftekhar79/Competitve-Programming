@@ -1,0 +1,45 @@
+// Boiled eggs
+ 
+#include<bits/stdc++.h>
+#include<iostream>
+ 
+ 
+using namespace std;
+ 
+int main(){
+   
+    int test;
+    int n,p,q;
+    int cnt,sum;
+    int num;
+   
+   
+    cin>>test;
+   
+    for(int i=1;i<=test;i++){
+       
+        cin>>n>>p>>q;
+       
+   
+       
+        cnt=0,sum=0;
+       
+        while(n--){
+            cin>>num;
+           
+            sum=sum+num;
+           
+            if(cnt<p && sum<=q)
+                cnt++;
+               
+               
+                           
+        }      
+       
+        cout<<"Case "<<i<<": "<<cnt<<endl;
+       
+       
+    }
+   
+   
+}
