@@ -1,4 +1,4 @@
-// sale
+// Sale
 
 #include<bits/stdc++.h>
 
