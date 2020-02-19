@@ -1,4 +1,4 @@
-//  Cover Points
+// Cover Points
 
 #include<bits/stdc++.h>
 
