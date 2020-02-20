@@ -1,3 +1,7 @@
+// Prime Cuts
+// this problem will get presentation error if we print all array elements in a single loop
+// array last element should print separately.
+
 #include<bits/stdc++.h>
 #include<iostream>
 
