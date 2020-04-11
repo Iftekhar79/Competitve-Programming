@@ -28,8 +28,7 @@ int main(){
 			
 			if(s[i]==k[j] || s[i]==tolower(k[j]))
 			     
-				 check=true;
-			
+				 check=true;			
 			
 		}
 		
@@ -44,8 +43,6 @@ int main(){
     	cout<<res<<endl;
 	
 	}
-	
-	
-	
+
 	
 }
